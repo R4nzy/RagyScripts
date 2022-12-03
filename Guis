@@ -20,6 +20,8 @@ GHubV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = GHubV1
 Frame.Draggable = true
+Frame.Active = true
+Frame.Selectable = true
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.Position = UDim2.new(0.39888683, 0, 0.205882356, 0)
 Frame.Size = UDim2.new(0, 306, 0, 308)
