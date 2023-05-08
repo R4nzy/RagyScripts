@@ -3,93 +3,130 @@
 
 -- Instances:
 
-local GHubV1 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Ghubv2 = Instance.new("ScreenGui")
+local MainGhubv2 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Topbar = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local s1 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-local s2 = Instance.new("TextButton")
+local s1 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local s3 = Instance.new("TextButton")
+local s2 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local s3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local s4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 
 --Properties:
+Ghubv2.ResetOnSpawn = false
+Ghubv2.Name = "Ghubv2"
+Ghubv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ghubv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-GHubV1.Name = "GHubV1"
-GHubV1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-GHubV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainGhubv2.Name = "MainGhubv2"
+MainGhubv2.Active = true
+MainGhubv2.Selectable = true
+MainGhubv2.Draggable = true
+MainGhubv2.Parent = Ghubv2
+MainGhubv2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+MainGhubv2.Position = UDim2.new(0.352864563, 0, 0.201694921, 0)
+MainGhubv2.Size = UDim2.new(0, 210, 0, 294)
 
-Frame.Parent = GHubV1
-Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame.Position = UDim2.new(0.39888683, 0, 0.205882356, 0)
-Frame.Size = UDim2.new(0, 306, 0, 308)
+UICorner.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner.Parent = MainGhubv2
 
-UICorner.Parent = Frame
+Topbar.Name = "Topbar"
+Topbar.Parent = MainGhubv2
+Topbar.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Topbar.Size = UDim2.new(0, 209, 0, 25)
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextLabel.Size = UDim2.new(0, 306, 0, 24)
-TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "GHUB[V1]"
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_2.Parent = Topbar
+
+TextLabel.Parent = Topbar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 208, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "GHUB[V2]"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_2.Parent = TextLabel
+UICorner_3.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_3.Parent = TextLabel
 
 s1.Name = "s1"
-s1.Parent = Frame
-s1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-s1.Position = UDim2.new(0, 0, 0.13636364, 0)
-s1.Size = UDim2.new(0, 104, 0, 28)
-s1.Font = Enum.Font.FredokaOne
+s1.Parent = MainGhubv2
+s1.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+s1.Position = UDim2.new(0.0190476198, 0, 0.115646258, 0)
+s1.Size = UDim2.new(0, 200, 0, 37)
+s1.Font = Enum.Font.SourceSans
 s1.Text = "AutoBlock"
 s1.TextColor3 = Color3.fromRGB(255, 255, 255)
 s1.TextScaled = true
 s1.TextSize = 14.000
 s1.TextWrapped = true
 
-UICorner_3.Parent = s1
+UICorner_4.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_4.Parent = s1
 
 s2.Name = "s2"
-s2.Parent = Frame
-s2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-s2.Position = UDim2.new(0.349673212, 0, 0.13636364, 0)
-s2.Size = UDim2.new(0, 91, 0, 28)
-s2.Font = Enum.Font.FredokaOne
-s2.Text = "NoCooldown"
+s2.Parent = MainGhubv2
+s2.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+s2.Position = UDim2.new(0.0238095243, 0, 0.265306115, 0)
+s2.Size = UDim2.new(0, 200, 0, 37)
+s2.Font = Enum.Font.SourceSans
+s2.Text = "No Cooldown"
 s2.TextColor3 = Color3.fromRGB(255, 255, 255)
 s2.TextScaled = true
 s2.TextSize = 14.000
 s2.TextWrapped = true
 
-UICorner_4.Parent = s2
+UICorner_5.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_5.Parent = s2
 
 s3.Name = "s3"
-s3.Parent = Frame
-s3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-s3.Position = UDim2.new(0.660130799, 0, 0.13636364, 0)
-s3.Size = UDim2.new(0, 104, 0, 28)
-s3.Font = Enum.Font.FredokaOne
-s3.Text = "InfStamina"
+s3.Parent = MainGhubv2
+s3.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+s3.Position = UDim2.new(0.0190476198, 0, 0.414965987, 0)
+s3.Size = UDim2.new(0, 200, 0, 37)
+s3.Font = Enum.Font.SourceSans
+s3.Text = "Inf Energy"
 s3.TextColor3 = Color3.fromRGB(255, 255, 255)
 s3.TextScaled = true
 s3.TextSize = 14.000
 s3.TextWrapped = true
 
-UICorner_5.Parent = s3
+UICorner_6.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_6.Parent = s3
 
-TextLabel_2.Parent = Frame
+s4.Name = "s4"
+s4.Parent = MainGhubv2
+s4.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+s4.Position = UDim2.new(0.0190476198, 0, 0.574829936, 0)
+s4.Size = UDim2.new(0, 200, 0, 37)
+s4.Font = Enum.Font.SourceSans
+s4.Text = "Reset"
+s4.TextColor3 = Color3.fromRGB(255, 255, 255)
+s4.TextScaled = true
+s4.TextSize = 14.000
+s4.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_7.Parent = s4
+
+TextLabel_2.Parent = MainGhubv2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, 0.896103919, 0)
-TextLabel_2.Size = UDim2.new(0, 306, 0, 32)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "Credits to Ranzy#9016(Me)This script is high perfomed! The script got anti-ban from the anti-cheat system! But u can be banned from the owner!"
+TextLabel_2.Position = UDim2.new(0.0190476198, 0, 0.71768707, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 75)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Credits : The owner is R4nzy#6551. This script is highly recommended for Fun and Tryharding! I'd really like more people to use it!"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -97,8 +134,8 @@ TextLabel_2.TextWrapped = true
 
 -- Scripts:
 
-local function LFRTHB_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+local function PPEOFS_fake_script() -- MainGhubv2.LocalScript 
+	local script = Instance.new('LocalScript', MainGhubv2)
 
 	-- default settings
 	_G.AutoBlock = true -- blocks most incoming hits but may also block your hits.
@@ -117,7 +154,7 @@ local function LFRTHB_fake_script() -- Frame.LocalScript
 			end
 			return inst
 		end
-	    local ScreenGui = script.Parent.Parent
+		local ScreenGui = script.Parent.Parent
 		local Frame = script.Parent
 		local AutoBlock = Frame.s1
 		local InfEnergy = Frame.s3
@@ -164,13 +201,16 @@ local function LFRTHB_fake_script() -- Frame.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(LFRTHB_fake_script)()
-local function IFIJDX_fake_script() -- GHubV1.LocalScript 
-	local script = Instance.new('LocalScript', GHubV1)
+coroutine.wrap(PPEOFS_fake_script)()
+local function GQXTTNZ_fake_script() -- s4.LocalScript 
+	local script = Instance.new('LocalScript', s4)
 
-	frame = script.Parent.Frame
-	frame.Draggable = true
-	frame.Selectable = true
-	frame.Active = true
+	local plr = game.Players.LocalPlayer
+	local s4 = script.Parent
+	
+	s4.MouseButton1Click:Connect(function()
+		plr.Character:BreakJoints()
+		plr.Character.Humanoid.Health -= 10000
+	end)
 end
-coroutine.wrap(IFIJDX_fake_script)()
+coroutine.wrap(GQXTTNZ_fake_script)()
