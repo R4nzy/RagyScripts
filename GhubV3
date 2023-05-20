@@ -3,12 +3,12 @@
 
 -- Instances:
 
-local Ghubv2 = Instance.new("ScreenGui")
+local Ghubv3 = Instance.new("ScreenGui")
 local MainGhubv2 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Topbar = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
 local UICorner_3 = Instance.new("UICorner")
 local s1 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
@@ -16,26 +16,39 @@ local s2 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local s3 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local s4 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
+local SpeedFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_8 = Instance.new("UICorner")
+local Set = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local JumpFrame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_11 = Instance.new("UICorner")
+local Set_2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
-Ghubv2.ResetOnSpawn = false
-Ghubv2.Name = "Ghubv2"
-Ghubv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Ghubv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Ghubv3.Name = "Ghubv3"
+Ghubv3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ghubv3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Ghubv3.ResetOnSpawn = false
 
 MainGhubv2.Name = "MainGhubv2"
-MainGhubv2.Active = true
+MainGhubv2.Parent = Ghubv3
 MainGhubv2.Selectable = true
 MainGhubv2.Draggable = true
-MainGhubv2.Parent = Ghubv2
+MainGhubv2.Active = true
 MainGhubv2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-MainGhubv2.Position = UDim2.new(0.352864563, 0, 0.201694921, 0)
+MainGhubv2.Draggable = true
+MainGhubv2.Position = UDim2.new(0.109518535, 126, 0.260878593, -115)
+MainGhubv2.Selectable = true
 MainGhubv2.Size = UDim2.new(0, 210, 0, 294)
 
-UICorner.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = MainGhubv2
 
 Topbar.Name = "Topbar"
@@ -43,28 +56,28 @@ Topbar.Parent = MainGhubv2
 Topbar.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 Topbar.Size = UDim2.new(0, 209, 0, 25)
 
-UICorner_2.CornerRadius = UDim.new(0.0500000007, 8)
-UICorner_2.Parent = Topbar
-
 TextLabel.Parent = Topbar
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Size = UDim2.new(0, 208, 0, 24)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "GHUB[V2]"
+TextLabel.Text = "GHUB {Versoin 3.0}"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0.0500000007, 8)
-UICorner_3.Parent = TextLabel
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_2.Parent = TextLabel
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Topbar
 
 s1.Name = "s1"
 s1.Parent = MainGhubv2
 s1.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 s1.Position = UDim2.new(0.0190476198, 0, 0.115646258, 0)
-s1.Size = UDim2.new(0, 200, 0, 37)
+s1.Size = UDim2.new(0, 200, 0, 27)
 s1.Font = Enum.Font.SourceSans
 s1.Text = "AutoBlock"
 s1.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -72,14 +85,14 @@ s1.TextScaled = true
 s1.TextSize = 14.000
 s1.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_4.CornerRadius = UDim.new(0, 4)
 UICorner_4.Parent = s1
 
 s2.Name = "s2"
 s2.Parent = MainGhubv2
 s2.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-s2.Position = UDim2.new(0.0238095243, 0, 0.265306115, 0)
-s2.Size = UDim2.new(0, 200, 0, 37)
+s2.Position = UDim2.new(0.0238095243, 0, 0.234693885, 0)
+s2.Size = UDim2.new(0, 200, 0, 27)
 s2.Font = Enum.Font.SourceSans
 s2.Text = "No Cooldown"
 s2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -87,14 +100,14 @@ s2.TextScaled = true
 s2.TextSize = 14.000
 s2.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_5.CornerRadius = UDim.new(0, 4)
 UICorner_5.Parent = s2
 
 s3.Name = "s3"
 s3.Parent = MainGhubv2
 s3.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-s3.Position = UDim2.new(0.0190476198, 0, 0.414965987, 0)
-s3.Size = UDim2.new(0, 200, 0, 37)
+s3.Position = UDim2.new(0.0190476198, 0, 0.353741497, 0)
+s3.Size = UDim2.new(0, 200, 0, 27)
 s3.Font = Enum.Font.SourceSans
 s3.Text = "Inf Energy"
 s3.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -102,23 +115,8 @@ s3.TextScaled = true
 s3.TextSize = 14.000
 s3.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_6.CornerRadius = UDim.new(0, 4)
 UICorner_6.Parent = s3
-
-s4.Name = "s4"
-s4.Parent = MainGhubv2
-s4.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-s4.Position = UDim2.new(0.0190476198, 0, 0.574829936, 0)
-s4.Size = UDim2.new(0, 200, 0, 37)
-s4.Font = Enum.Font.SourceSans
-s4.Text = "Reset"
-s4.TextColor3 = Color3.fromRGB(255, 255, 255)
-s4.TextScaled = true
-s4.TextSize = 14.000
-s4.TextWrapped = true
-
-UICorner_7.CornerRadius = UDim.new(0.0500000007, 8)
-UICorner_7.Parent = s4
 
 TextLabel_2.Parent = MainGhubv2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -132,12 +130,104 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
+SpeedFrame.Name = "SpeedFrame"
+SpeedFrame.Parent = MainGhubv2
+SpeedFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+SpeedFrame.Position = UDim2.new(0.0238095187, 0, 0.482993186, 0)
+SpeedFrame.Size = UDim2.new(0, 88, 0, 69)
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = SpeedFrame
+
+TextBox.Parent = SpeedFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+TextBox.Position = UDim2.new(-0.0113632893, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 88, 0, 48)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "16"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = TextBox
+
+Set.Name = "Set"
+Set.Parent = SpeedFrame
+Set.BackgroundColor3 = Color3.fromRGB(8, 127, 0)
+Set.Position = UDim2.new(-0.0113632903, 0, 0.724637687, 0)
+Set.Size = UDim2.new(0, 89, 0, 19)
+Set.Font = Enum.Font.FredokaOne
+Set.Text = "Set WalkSpeed"
+Set.TextColor3 = Color3.fromRGB(255, 255, 255)
+Set.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = Set
+
+JumpFrame.Name = "JumpFrame"
+JumpFrame.Parent = MainGhubv2
+JumpFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+JumpFrame.Position = UDim2.new(0.552380919, 0, 0.482993186, 0)
+JumpFrame.Size = UDim2.new(0, 88, 0, 69)
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = JumpFrame
+
+TextBox_2.Parent = JumpFrame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+TextBox_2.Position = UDim2.new(3.46790671e-07, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0, 87, 0, 48)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = "50"
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = TextBox_2
+
+Set_2.Name = "Set"
+Set_2.Parent = JumpFrame
+Set_2.BackgroundColor3 = Color3.fromRGB(8, 127, 0)
+Set_2.Position = UDim2.new(-0.0227268934, 0, 0.724637687, 0)
+Set_2.Size = UDim2.new(0, 89, 0, 19)
+Set_2.Font = Enum.Font.FredokaOne
+Set_2.Text = "Set JumpPower"
+Set_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Set_2.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = Set_2
+
 -- Scripts:
 
-local function PPEOFS_fake_script() -- MainGhubv2.LocalScript 
+local function EKLFIZ_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local delay2 = 0.1 
+	local TextLabel = script.Parent 
+	while true do 
+		TextLabel.TextColor3 = Color3.new(255, 0, 0) 
+		wait(delay2) 
+		TextLabel.TextColor3 = Color3.new(1, 0.333333, 0) 
+		wait(delay2) 
+		TextLabel.TextColor3 = Color3.new(1, 1, 0) 
+		wait(delay2) 
+		TextLabel.TextColor3 = Color3.new(0.333333, 1, 0) 
+		wait(delay2) 
+		TextLabel.TextColor3 = Color3.new(0, 0.482353, 1)
+		wait(delay2) 
+		TextLabel.TextColor3 = Color3.new(0.333333, 0, 0.498039)
+		wait(delay2) 
+	end
+end
+coroutine.wrap(EKLFIZ_fake_script)()
+local function MERFQ_fake_script() -- MainGhubv2.LocalScript 
 	local script = Instance.new('LocalScript', MainGhubv2)
 
-	-- default settings
 	_G.AutoBlock = true -- blocks most incoming hits but may also block your hits.
 	_G.InfEnergy = true
 	_G.NoCooldown = true -- works for some things like you can spam ryan's right click.
@@ -201,16 +291,26 @@ local function PPEOFS_fake_script() -- MainGhubv2.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(PPEOFS_fake_script)()
-local function GQXTTNZ_fake_script() -- s4.LocalScript 
-	local script = Instance.new('LocalScript', s4)
+coroutine.wrap(MERFQ_fake_script)()
+local function UAXEUI_fake_script() -- SpeedFrame.LocalScript 
+	local script = Instance.new('LocalScript', SpeedFrame)
 
-	local plr = game.Players.LocalPlayer
-	local s4 = script.Parent
+	local box = script.Parent.TextBox
+	local Set = script.Parent.Set
 	
-	s4.MouseButton1Click:Connect(function()
-		plr.Character:BreakJoints()
-		plr.Character.Humanoid.Health -= 10000
+	Set.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = box.Text
 	end)
 end
-coroutine.wrap(GQXTTNZ_fake_script)()
+coroutine.wrap(UAXEUI_fake_script)()
+local function COHM_fake_script() -- JumpFrame.LocalScript 
+	local script = Instance.new('LocalScript', JumpFrame)
+
+	local box = script.Parent.TextBox
+	local Set = script.Parent.Set
+	
+	Set.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = box.Text
+	end)
+end
+coroutine.wrap(COHM_fake_script)()
