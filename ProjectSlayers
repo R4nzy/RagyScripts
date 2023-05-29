@@ -124,24 +124,25 @@ Info_2.TextWrapped = true
 
 local function YYKD_fake_script() -- Sylveon.LocalScript 
 	local script = Instance.new('LocalScript', Sylveon)
-
+script.Parent.MouseButton1Click:Connect(function()
 	local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
 	repeat wait() until game:IsLoaded()
 	loadstring(game:HttpGet(LoaderUrl))()
+end)	
 end
 coroutine.wrap(YYKD_fake_script)()
 local function QNIABPR_fake_script() -- AutoDungeon1.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon1)
-
+script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
-	
+end)
 end
 coroutine.wrap(QNIABPR_fake_script)()
 local function IDQVXL_fake_script() -- AutoDungeon2.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon2)
-
+script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
-	
+end)
 end
 coroutine.wrap(IDQVXL_fake_script)()
 local function SJKISI_fake_script() -- Main.LocalScript 
