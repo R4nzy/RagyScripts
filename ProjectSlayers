@@ -1,0 +1,153 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Ragy = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Sylveon = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local AutoDungeon1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Info = Instance.new("TextLabel")
+local AutoDungeon2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Info_2 = Instance.new("TextLabel")
+
+--Properties:
+
+Ragy.Name = "Ragy"
+Ragy.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ragy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Ragy
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(0, 51, 83)
+Main.Position = UDim2.new(0.594568193, 0, 0.222033903, 0)
+Main.Size = UDim2.new(0, 124, 0, 168)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Main
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(0, 40, 172)
+Title.Position = UDim2.new(-2.46109494e-07, 0, 0, 0)
+Title.Size = UDim2.new(0, 125, 0, 22)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Project Slayers Scripts"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Title
+
+Sylveon.Name = "Sylveon"
+Sylveon.Parent = Main
+Sylveon.BackgroundColor3 = Color3.fromRGB(0, 106, 172)
+Sylveon.Position = UDim2.new(-2.46109494e-07, 0, 0.184523821, 0)
+Sylveon.Size = UDim2.new(0, 124, 0, 25)
+Sylveon.Font = Enum.Font.SourceSans
+Sylveon.Text = "[1#] Sylveon Hub"
+Sylveon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sylveon.TextScaled = true
+Sylveon.TextSize = 14.000
+Sylveon.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Sylveon.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Sylveon
+
+AutoDungeon1.Name = "AutoDungeon1"
+AutoDungeon1.Parent = Main
+AutoDungeon1.BackgroundColor3 = Color3.fromRGB(0, 106, 172)
+AutoDungeon1.Position = UDim2.new(-0.00806476176, 0, 0.369047642, 0)
+AutoDungeon1.Size = UDim2.new(0, 124, 0, 25)
+AutoDungeon1.Font = Enum.Font.SourceSans
+AutoDungeon1.Text = "[2#] Auto Dungeon [Items]"
+AutoDungeon1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDungeon1.TextScaled = true
+AutoDungeon1.TextSize = 14.000
+AutoDungeon1.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = AutoDungeon1
+
+Info.Name = "Info"
+Info.Parent = AutoDungeon1
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(-0.00806476176, 0, 1, 0)
+Info.Size = UDim2.new(0, 125, 0, 25)
+Info.Font = Enum.Font.SourceSans
+Info.Text = "Key : NotReallyFast | Best script for items!"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+AutoDungeon2.Name = "AutoDungeon2"
+AutoDungeon2.Parent = Main
+AutoDungeon2.BackgroundColor3 = Color3.fromRGB(0, 106, 172)
+AutoDungeon2.Position = UDim2.new(-0.00806476176, 0, 0.678571463, 0)
+AutoDungeon2.Size = UDim2.new(0, 124, 0, 25)
+AutoDungeon2.Font = Enum.Font.SourceSans
+AutoDungeon2.Text = "[3#] Auto Dungeon [Points]"
+AutoDungeon2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDungeon2.TextScaled = true
+AutoDungeon2.TextSize = 14.000
+AutoDungeon2.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = AutoDungeon2
+
+Info_2.Name = "Info"
+Info_2.Parent = AutoDungeon2
+Info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.BackgroundTransparency = 1.000
+Info_2.Position = UDim2.new(-0.00806476176, 0, 1, 0)
+Info_2.Size = UDim2.new(0, 125, 0, 25)
+Info_2.Font = Enum.Font.SourceSans
+Info_2.Text = "This is the best auto dungeon for points!"
+Info_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.TextScaled = true
+Info_2.TextSize = 14.000
+Info_2.TextWrapped = true
+
+-- Scripts:
+
+local function YYKD_fake_script() -- Sylveon.LocalScript 
+	local script = Instance.new('LocalScript', Sylveon)
+
+	local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
+	repeat wait() until game:IsLoaded()
+	loadstring(game:HttpGet(LoaderUrl))()
+end
+coroutine.wrap(YYKD_fake_script)()
+local function QNIABPR_fake_script() -- AutoDungeon1.LocalScript 
+	local script = Instance.new('LocalScript', AutoDungeon1)
+
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+	
+end
+coroutine.wrap(QNIABPR_fake_script)()
+local function IDQVXL_fake_script() -- AutoDungeon2.LocalScript 
+	local script = Instance.new('LocalScript', AutoDungeon2)
+
+	loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
+	
+end
+coroutine.wrap(IDQVXL_fake_script)()
+local function SJKISI_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(SJKISI_fake_script)()
