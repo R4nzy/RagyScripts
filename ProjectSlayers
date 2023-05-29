@@ -20,6 +20,7 @@ local Info_2 = Instance.new("TextLabel")
 --Properties:
 
 Ragy.Name = "Ragy"
+Ragy.ResetOnSpawn = false
 Ragy.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Ragy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
