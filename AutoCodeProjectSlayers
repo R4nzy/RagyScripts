@@ -1,4 +1,4 @@
-if game.PlaceId == 5956785391 then
+
 local lp = game.Players.LocalPlayer
 local Pg = lp:WaitForChild("PlayerGui")
 local Main = Pg.Menu
@@ -13,7 +13,7 @@ local z = w:CreateFolder("Race Reset Codes")
 local v = w:CreateFolder("Auto Daily Spin")
 b:Button("Miniupdate1.5",function()
     local args = {
-    [1] = "Miniupdate1.5"
+    [1] = "Miniupdate1.5",
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
@@ -92,10 +92,9 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
-v:Button("Auto Daily Spin")
-while task.wait(0.13) do
-game:GetService("ReplicatedStorage"):WaitForChild("spins_thing_remote"):InvokeServer()
-end
-end)
 
-end
+v:Button("Auto Daily Spin",function()
+  while task.wait(0.13) do
+ game:GetService("ReplicatedStorage"):WaitForChild("spins_thing_remote"):InvokeServer()
+ end
+end)
