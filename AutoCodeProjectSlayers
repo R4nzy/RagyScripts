@@ -38,15 +38,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
-b:Button("SorryForIssuesToday",function()
-    local args = {
-    [1] = "SorryForIssuesTodaay"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
-
-end)
-
 s:Button("Thx4300MNOuwohanaIsBackBreathReset",function()
    local args = {
     [1] = "Thx4300MNOuwohanaIsBackBreathReset"
