@@ -10,7 +10,7 @@ local w = library:CreateWindow("Auto Code By RagyScripts") -- Creates the window
 local b = w:CreateFolder("Clan Spin Codes") -- Creates the folder(U will put here your buttons,etc)
 local s = w:CreateFolder("Breath Reset Codes")
 local z = w:CreateFolder("Race Reset Codes")
-
+local v = w:CreateFolder("Auto Daily Spin")
 b:Button("Miniupdate1.5",function()
     local args = {
     [1] = "Miniupdate1.5"
@@ -38,6 +38,14 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
+b:Button("SorryForIssuesToday",function()
+    local args = {
+    [1] = "SorryForIssuesTodaay"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
+
+end)
 
 s:Button("Thx4300MNOuwohanaIsBackBreathReset",function()
    local args = {
@@ -83,5 +91,9 @@ b:Button("NewAntiExploit",function()
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
 
 end)
+v:Button("Auto Daily Spin")
+while task.wait(0.13) do
+game:GetService("ReplicatedStorage"):WaitForChild("spins_thing_remote"):InvokeServer()
+end
 
 end
