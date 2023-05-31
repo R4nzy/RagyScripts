@@ -91,9 +91,11 @@ b:Button("NewAntiExploit",function()
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
 
 end)
+
 v:Button("Auto Daily Spin")
 while task.wait(0.13) do
 game:GetService("ReplicatedStorage"):WaitForChild("spins_thing_remote"):InvokeServer()
 end
+end)
 
 end
