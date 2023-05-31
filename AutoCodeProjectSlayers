@@ -40,7 +40,7 @@ end)
 
 b:Button("SorryForIssuesToday",function()
     local args = {
-    [1] = "SorryForIssuesTodaay"
+    [1] = "SorryForIssuesToday"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
