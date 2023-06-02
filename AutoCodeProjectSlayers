@@ -1,4 +1,3 @@
-
 local lp = game.Players.LocalPlayer
 local Pg = lp:WaitForChild("PlayerGui")
 local Main = Pg.Menu
@@ -83,6 +82,14 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
+b:Button("Upd295MiniCode",function()
+    local args = {
+    [1] = "Upd295MiniCode"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
+
+end)
 
 v:Button("Auto Daily Spin",function()
   while task.wait(0.13) do
