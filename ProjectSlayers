@@ -17,17 +17,19 @@ local UICorner_4 = Instance.new("UICorner")
 local AutoLilyFlower = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UICorner_6 = Instance.new("UICorner")
+local AutoMugenTrain = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Key = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Key = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local CodeBox = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
-local KeyLink = Instance.new("TextButton")
+local CodeBox = Instance.new("TextBox")
 local UICorner_11 = Instance.new("UICorner")
-local Submit = Instance.new("TextButton")
+local KeyLink = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local Submit = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
@@ -39,7 +41,7 @@ Main.Name = "Main"
 Main.Parent = Ragy
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.Position = UDim2.new(0.390177339, 0, 0.236734688, 0)
-Main.Size = UDim2.new(0, 158, 0, 242)
+Main.Size = UDim2.new(0, 167, 0, 265)
 Main.Visible = false
 Main.Image = "http://www.roblox.com/asset/?id=8276760935"
 
@@ -49,13 +51,13 @@ Main_2.Active = true
 Main_2.BackgroundColor3 = Color3.fromRGB(83, 0, 0)
 Main_2.BackgroundTransparency = 0.250
 Main_2.Position = UDim2.new(-0.000851594959, 0, -0.00796609651, 0)
-Main_2.Size = UDim2.new(0, 158, 0, 245)
+Main_2.Size = UDim2.new(0, 168, 0, 266)
 
 Title.Name = "Title"
 Title.Parent = Main_2
 Title.BackgroundColor3 = Color3.fromRGB(172, 20, 0)
-Title.Position = UDim2.new(-1.93149233e-07, 0, 0, 0)
-Title.Size = UDim2.new(0, 158, 0, 22)
+Title.Position = UDim2.new(-1.81652254e-07, 0, 0, 0)
+Title.Size = UDim2.new(0, 168, 0, 22)
 Title.Font = Enum.Font.SourceSans
 Title.Text = "Project Slayers Scripts"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -68,8 +70,8 @@ UICorner.Parent = Title
 Sylveon.Name = "Sylveon"
 Sylveon.Parent = Main_2
 Sylveon.BackgroundColor3 = Color3.fromRGB(220, 22, 0)
-Sylveon.Position = UDim2.new(-0.00260925316, 0, 0.132477909, 0)
-Sylveon.Size = UDim2.new(0, 158, 0, 25)
+Sylveon.Position = UDim2.new(-0.00260925293, 0, 0.113680899, 0)
+Sylveon.Size = UDim2.new(0, 168, 0, 25)
 Sylveon.Font = Enum.Font.SourceSans
 Sylveon.Text = "[1#] Sylveon Hub"
 Sylveon.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -83,8 +85,8 @@ UICorner_2.Parent = Sylveon
 AutoDungeon1.Name = "AutoDungeon1"
 AutoDungeon1.Parent = Main_2
 AutoDungeon1.BackgroundColor3 = Color3.fromRGB(220, 22, 0)
-AutoDungeon1.Position = UDim2.new(-0.00806475338, 0, 0.358027101, 0)
-AutoDungeon1.Size = UDim2.new(0, 157, 0, 25)
+AutoDungeon1.Position = UDim2.new(-0.00806481484, 0, 0.279079705, 0)
+AutoDungeon1.Size = UDim2.new(0, 168, 0, 29)
 AutoDungeon1.Font = Enum.Font.SourceSans
 AutoDungeon1.Text = "[2#] Auto Dungeon [Items]"
 AutoDungeon1.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -97,8 +99,8 @@ UICorner_3.Parent = AutoDungeon1
 AutoDungeon2.Name = "AutoDungeon2"
 AutoDungeon2.Parent = Main_2
 AutoDungeon2.BackgroundColor3 = Color3.fromRGB(220, 22, 0)
-AutoDungeon2.Position = UDim2.new(-0.000431302236, 0, 0.550285339, 0)
-AutoDungeon2.Size = UDim2.new(0, 158, 0, 25)
+AutoDungeon2.Position = UDim2.new(-0.0123360027, 0, 0.448781669, 0)
+AutoDungeon2.Size = UDim2.new(0, 168, 0, 29)
 AutoDungeon2.Font = Enum.Font.SourceSans
 AutoDungeon2.Text = "[3#] Auto Dungeon [Points]"
 AutoDungeon2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -111,8 +113,8 @@ UICorner_4.Parent = AutoDungeon2
 AutoLilyFlower.Name = "AutoLilyFlower"
 AutoLilyFlower.Parent = Main_2
 AutoLilyFlower.BackgroundColor3 = Color3.fromRGB(220, 22, 0)
-AutoLilyFlower.Position = UDim2.new(-0.0130895302, 0, 0.781386733, 0)
-AutoLilyFlower.Size = UDim2.new(0, 158, 0, 25)
+AutoLilyFlower.Position = UDim2.new(-0.00118473603, 0, 0.642288983, 0)
+AutoLilyFlower.Size = UDim2.new(0, 167, 0, 30)
 AutoLilyFlower.Font = Enum.Font.SourceSans
 AutoLilyFlower.Text = "[#4] Auto Lily Flower Script"
 AutoLilyFlower.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -124,7 +126,21 @@ UICorner_5.Parent = AutoLilyFlower
 
 UICorner_6.Parent = Main_2
 
-UICorner_7.Parent = Main
+AutoMugenTrain.Name = "AutoMugenTrain"
+AutoMugenTrain.Parent = Main_2
+AutoMugenTrain.BackgroundColor3 = Color3.fromRGB(220, 22, 0)
+AutoMugenTrain.Position = UDim2.new(-0.00713711698, 0, 0.837777734, 0)
+AutoMugenTrain.Size = UDim2.new(0, 168, 0, 30)
+AutoMugenTrain.Font = Enum.Font.SourceSans
+AutoMugenTrain.Text = "[#5] Auto Mugen Train Script"
+AutoMugenTrain.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoMugenTrain.TextScaled = true
+AutoMugenTrain.TextSize = 14.000
+AutoMugenTrain.TextWrapped = true
+
+UICorner_7.Parent = AutoMugenTrain
+
+UICorner_8.Parent = Main
 
 Key.Name = "Key"
 Key.Parent = Ragy
@@ -132,7 +148,7 @@ Key.BackgroundColor3 = Color3.fromRGB(182, 0, 0)
 Key.Position = UDim2.new(0.33287859, 0, 0.359322071, 0)
 Key.Size = UDim2.new(0, 245, 0, 165)
 
-UICorner_8.Parent = Key
+UICorner_9.Parent = Key
 
 TextLabel.Parent = Key
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -146,7 +162,7 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_9.Parent = TextLabel
+UICorner_10.Parent = TextLabel
 
 CodeBox.Name = "CodeBox"
 CodeBox.Parent = Key
@@ -161,7 +177,7 @@ CodeBox.TextScaled = true
 CodeBox.TextSize = 14.000
 CodeBox.TextWrapped = true
 
-UICorner_10.Parent = CodeBox
+UICorner_11.Parent = CodeBox
 
 KeyLink.Name = "KeyLink"
 KeyLink.Parent = Key
@@ -175,7 +191,7 @@ KeyLink.TextScaled = true
 KeyLink.TextSize = 14.000
 KeyLink.TextWrapped = true
 
-UICorner_11.Parent = KeyLink
+UICorner_12.Parent = KeyLink
 
 Submit.Name = "Submit"
 Submit.Parent = Key
@@ -189,11 +205,11 @@ Submit.TextScaled = true
 Submit.TextSize = 14.000
 Submit.TextWrapped = true
 
-UICorner_12.Parent = Submit
+UICorner_13.Parent = Submit
 
 -- Scripts:
 
-local function NWBKJ_fake_script() -- Sylveon.LocalScript 
+local function ZTBYB_fake_script() -- Sylveon.LocalScript 
 	local script = Instance.new('LocalScript', Sylveon)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -202,48 +218,56 @@ local function NWBKJ_fake_script() -- Sylveon.LocalScript
 		loadstring(game:HttpGet(LoaderUrl))()
 	end)
 end
-coroutine.wrap(NWBKJ_fake_script)()
-local function RPWIFO_fake_script() -- AutoDungeon1.LocalScript 
+coroutine.wrap(ZTBYB_fake_script)()
+local function RIGQRMK_fake_script() -- AutoDungeon1.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
 	end)
 end
-coroutine.wrap(RPWIFO_fake_script)()
-local function KFBKJNR_fake_script() -- AutoDungeon2.LocalScript 
+coroutine.wrap(RIGQRMK_fake_script)()
+local function HWWMUYV_fake_script() -- AutoDungeon2.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
 	end)
 end
-coroutine.wrap(KFBKJNR_fake_script)()
-local function GQUPCXL_fake_script() -- AutoLilyFlower.LocalScript 
+coroutine.wrap(HWWMUYV_fake_script)()
+local function CBONJE_fake_script() -- AutoLilyFlower.LocalScript 
 	local script = Instance.new('LocalScript', AutoLilyFlower)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/ProjectSlayer.lua"))()
 	end)
 end
-coroutine.wrap(GQUPCXL_fake_script)()
-local function KSXQDGO_fake_script() -- Main.LocalScript 
+coroutine.wrap(CBONJE_fake_script)()
+local function ZLEVHXS_fake_script() -- AutoMugenTrain.LocalScript 
+	local script = Instance.new('LocalScript', AutoMugenTrain)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lmmake/fun/main/projectslayer.lua"))()
+	end)
+end
+coroutine.wrap(ZLEVHXS_fake_script)()
+local function TGRZBX_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
 	script.Parent.Selectable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(KSXQDGO_fake_script)()
-local function OWYO_fake_script() -- KeyLink.LocalScript 
+coroutine.wrap(TGRZBX_fake_script)()
+local function ENFP_fake_script() -- KeyLink.LocalScript 
 	local script = Instance.new('LocalScript', KeyLink)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://link-target.net/807879/key")
 	end)
 end
-coroutine.wrap(OWYO_fake_script)()
-local function DJMQFMG_fake_script() -- Submit.LocalScript 
+coroutine.wrap(ENFP_fake_script)()
+local function PRCD_fake_script() -- Submit.LocalScript 
 	local script = Instance.new('LocalScript', Submit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -256,12 +280,12 @@ local function DJMQFMG_fake_script() -- Submit.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DJMQFMG_fake_script)()
-local function LVDB_fake_script() -- Key.LocalScript 
+coroutine.wrap(PRCD_fake_script)()
+local function CVQOGA_fake_script() -- Key.LocalScript 
 	local script = Instance.new('LocalScript', Key)
 
 	script.Parent.Draggable = true
 	script.Parent.Selectable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(LVDB_fake_script)()
+coroutine.wrap(CVQOGA_fake_script)()
