@@ -39,15 +39,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
-s:Button("Update1.5BreathReset",function()
-    local args = {
-    [1] = "Update1.5BreathReset"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
-
-end)
-
 
 z:Button("Thx4300MNOuwohanaIsBackRaceReset",function()
     local args = {
@@ -58,14 +49,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
-z:Button("Update1.5RaceReset",function()
-    local args = {
-    [1] = "Update1.5RaceReset"
-}
 
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
-
-end)
 
 b:Button("NewAntiExploit",function()
     local args = {
