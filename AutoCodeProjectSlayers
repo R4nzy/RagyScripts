@@ -20,14 +20,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_
 
 end)
 
-b:Button("Update1.5Spins",function()
-    local args = {
-    [1] = "Update1.5Spins"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
-
-end)
 
 b:Button("Thx4300MNOuwohanaIsBack",function()
     local args = {
