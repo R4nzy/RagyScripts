@@ -193,52 +193,57 @@ UICorner_12.Parent = Submit
 
 -- Scripts:
 
-local function VPKTHJF_fake_script() -- Sylveon.LocalScript 
+local function NWBKJ_fake_script() -- Sylveon.LocalScript 
 	local script = Instance.new('LocalScript', Sylveon)
 
-	local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
-	repeat wait() until game:IsLoaded()
-	loadstring(game:HttpGet(LoaderUrl))()
+	script.Parent.MouseButton1Click:Connect(function()
+		local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
+		repeat wait() until game:IsLoaded()
+		loadstring(game:HttpGet(LoaderUrl))()
+	end)
 end
-coroutine.wrap(VPKTHJF_fake_script)()
-local function RCLIGEH_fake_script() -- AutoDungeon1.LocalScript 
+coroutine.wrap(NWBKJ_fake_script)()
+local function RPWIFO_fake_script() -- AutoDungeon1.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon1)
 
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
-	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+	end)
 end
-coroutine.wrap(RCLIGEH_fake_script)()
-local function PESUVY_fake_script() -- AutoDungeon2.LocalScript 
+coroutine.wrap(RPWIFO_fake_script)()
+local function KFBKJNR_fake_script() -- AutoDungeon2.LocalScript 
 	local script = Instance.new('LocalScript', AutoDungeon2)
 
-	loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
-	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
+	end)
 end
-coroutine.wrap(PESUVY_fake_script)()
-local function UGBHB_fake_script() -- AutoLilyFlower.LocalScript 
+coroutine.wrap(KFBKJNR_fake_script)()
+local function GQUPCXL_fake_script() -- AutoLilyFlower.LocalScript 
 	local script = Instance.new('LocalScript', AutoLilyFlower)
 
-	loadstring(game:HttpGetAsync("https://gist.github.com/NotHubris/16fbe2bf8d9563e09858c5cd2c6fafce/raw"))()
-	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/ProjectSlayer.lua"))()
+	end)
 end
-coroutine.wrap(UGBHB_fake_script)()
-local function SYWU_fake_script() -- Main.LocalScript 
+coroutine.wrap(GQUPCXL_fake_script)()
+local function KSXQDGO_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
 	script.Parent.Selectable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(SYWU_fake_script)()
-local function FAILEJB_fake_script() -- KeyLink.LocalScript 
+coroutine.wrap(KSXQDGO_fake_script)()
+local function OWYO_fake_script() -- KeyLink.LocalScript 
 	local script = Instance.new('LocalScript', KeyLink)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://link-target.net/807879/key")
 	end)
 end
-coroutine.wrap(FAILEJB_fake_script)()
-local function FBMNHXF_fake_script() -- Submit.LocalScript 
+coroutine.wrap(OWYO_fake_script)()
+local function DJMQFMG_fake_script() -- Submit.LocalScript 
 	local script = Instance.new('LocalScript', Submit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -251,4 +256,12 @@ local function FBMNHXF_fake_script() -- Submit.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FBMNHXF_fake_script)()
+coroutine.wrap(DJMQFMG_fake_script)()
+local function LVDB_fake_script() -- Key.LocalScript 
+	local script = Instance.new('LocalScript', Key)
+
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(LVDB_fake_script)()
