@@ -11,9 +11,9 @@ local s = w:CreateFolder("Breath Reset Codes")
 local z = w:CreateFolder("Race Reset Codes")
 local v = w:CreateFolder("Auto Spin")
 
-b:Button("Miniupdate1.5",function()
+b:Button("ThanksForLikes600K",function()
     local args = {
-    [1] = "Miniupdate1.5",
+    [1] = "ThanksForLikes600K",
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
@@ -51,23 +51,15 @@ end)
 
 
 
-b:Button("NewAntiExploit",function()
+b:Button("ThanksForLikes600K2",function()
     local args = {
-    [1] = "NewAntiExploit"
+    [1] = "ThanksForLikes600K2"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
 
 end)
 
-b:Button("Upd295MiniCode",function()
-    local args = {
-    [1] = "Upd295MiniCode"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("send_code_to_server"):FireServer(unpack(args))
-
-end)
 
 v:Button("Auto Daily Spin",function()
   while task.wait(0.13) do
